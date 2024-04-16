@@ -31,11 +31,11 @@ public class Main {
         System.out.println(g);
 
 
-        byte LyudmilaPavlovna = 23;
-        byte AnnaSergeyevna = 27;
-        byte EkaterinaAndreevna = 30;
+        byte teacher1 = 23;
+        byte teacher2 = 27;
+        byte teacher3 = 30;
         short sheetsPaper = 480;
-        int totalStudents = LyudmilaPavlovna + AnnaSergeyevna + EkaterinaAndreevna;
+        int totalStudents = teacher1 + teacher2 + teacher3;
         System.out.println(totalStudents);
         int paperForEachStudent = sheetsPaper / totalStudents;
         System.out.println("На каждого ученика рассчитано " + paperForEachStudent + " листов бумаги");
@@ -80,11 +80,13 @@ public class Main {
 
         byte loseWeight = 7;
         short forDay250 = 250;
-        int day250 = forDay250 / loseWeight;
-        System.out.println("Если спортсмен будет терять каждый день по " + forDay250 + " грамм, то на похудение уйдет " + day250 + " дней" );
+        float kg250 = forDay250 / 1000f;
+        float day250 = loseWeight / kg250;
+        System.out.println("Если спортсмен будет худеть каждый день по " + forDay250 + " грамм, то на похудение уйдет " + day250 + " дней" );
         short forDay500 = 500;
-        int day500 = forDay500 / loseWeight;
-        System.out.println("Если спортсмен будет терять каждый день по " + forDay500 + " грамм, то на похудение уйдет " + day500 + " дней" );
+        float kg500 = forDay500 / 1000f;
+        float day500 = loseWeight / kg500;
+        System.out.println("Если спортсмен будет худеть каждый день по " + forDay500 + " грамм, то на похудение уйдет " + day500 + " дней" );
 
 
        int monthlySalary1 = 67760;
